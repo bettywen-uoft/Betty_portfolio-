@@ -26,7 +26,7 @@ export type Experience = {
   role: string;
   company: string;
   location: string;
-  overview: string;
+  overview?: string;
   projects: WorkProject[];
 };
 
@@ -62,7 +62,6 @@ export const experiences: Experience[] = [
     role: "Thermal & Mechanical Engineer",
     company: "Litens Automotive Group",
     location: "Ontario, Canada",
-    overview: "Took EV and robotic hardware from CAD and engineering analysis through rapid prototyping, assembly, instrumentation, and physical validation.",
     projects: [
       { slug: "cycloidal-actuator", code: "PROJECT 01", title: "70:1 Humanoid Cycloidal Actuator", summary: "Designed, assembled, and validated nine actuators across three design iterations, followed by torque-speed characterization and competitive benchmarking.", tags: ["Actuator Design", "Assembly", "Validation"] },
       {

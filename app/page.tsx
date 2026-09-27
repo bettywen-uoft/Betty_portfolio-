@@ -11,7 +11,7 @@ export default function Home() {
         <div className="hero-kicker">Mechanical Engineering Portfolio</div>
         <h1>Betty Wen</h1>
         <p className="hero-role">Mechanical Design · Mechatronics · Product Development</p>
-        <p className="hero-summary">Mechanical Engineering student at the University of Toronto with hands-on experience in automotive R&amp;D, robotic actuators, thermal systems, prototyping, engineering validation, and VLA-based robotic manipulation.</p>
+        <p className="hero-summary">Versatile mechanical engineering student specializing in solid mechanics, design, and mechatronics, with over three years of hands-on experience designing and analyzing mechanical components and systems. Interested in robotics, automotive systems, intelligent machines, and real-world engineering applications.</p>
         <div className="hero-actions"><a className="button primary" href="#experience-directory">Explore experience <span>↓</span></a><a className="button ghost" href={sitePath("/Betty_Wen_Resume_2026_09.pdf")} download>Download résumé</a></div>
       </div>
       <div className="portrait-panel">
@@ -40,7 +40,7 @@ export default function Home() {
         alt={experience.cardAlt}
         eyebrow={`${experience.period} / ${experience.location}`}
         title={experience.company}
-        description={`${experience.role}. ${experience.overview}`}
+        description={[experience.role, experience.overview].filter(Boolean).join(". ")}
         meta={`${experience.projects.length} ${experience.projects.length === 1 ? "PROJECT" : "PROJECTS"}`}
       />)}</div>
     </section>

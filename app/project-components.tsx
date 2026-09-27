@@ -13,8 +13,20 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ href, image, alt = "", eyebrow, title, description, meta }: ProjectCardProps) {
+  const placeholderMark = title
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map(word => word[0])
+    .join("")
+    .toUpperCase();
+
   return <a className="project-index-card" href={href}>
-    <div className="project-card-media">{image ? <img src={image} alt={alt} /> : <div className="project-card-placeholder" aria-hidden="true"><span>PROJECT IMAGE</span><strong>{meta}</strong></div>}</div>
+    <div className="project-card-media">{image ? <img src={image} alt={alt} /> : <div className="project-card-placeholder" aria-hidden="true">
+      <div className="placeholder-header"><span>Engineering record</span><span>{meta}</span></div>
+      <div className="placeholder-mark">{placeholderMark}</div>
+      <div className="placeholder-copy"><strong>{title}</strong><span>Design / Analysis / Validation</span></div>
+    </div>}</div>
     <div className="project-card-copy">
       <div className="project-card-meta"><span>{eyebrow}</span><span>{meta}</span></div>
       <h2>{title}</h2>
