@@ -12,7 +12,7 @@ export default function Home() {
         <h1>Betty Wen</h1>
         <p className="hero-role">Mechanical Design · Mechatronics · Product Development</p>
         <p className="hero-summary">Versatile mechanical engineering student specializing in solid mechanics, design, and mechatronics, with over three years of hands-on experience designing and analyzing mechanical components and systems. Interested in robotics, automotive systems, intelligent machines, and real-world engineering applications.</p>
-        <div className="hero-actions"><a className="button primary" href="#experience-directory">Explore experience <span>↓</span></a><a className="button ghost" href={sitePath("/Betty_Wen_Resume_2026_09.pdf")} download>Download résumé</a></div>
+        <div className="hero-actions"><a className="button primary" href="#experience-directory">Explore experience <span>↓</span></a><a className="button ghost" href={sitePath("/Betty_Wen_Resume_HVAC_2026_09.pdf")} download>Download résumé</a></div>
       </div>
       <div className="portrait-panel">
         <div className="panel-bar"><span>PROFILE / 01</span><span>TORONTO, ON</span></div>
@@ -51,8 +51,8 @@ export default function Home() {
     </section>
 
     <section className="resume section" id="resume" aria-labelledby="resume-title">
-      <div className="resume-heading"><div><p className="eyebrow">Résumé</p><h2 id="resume-title">Experience at a glance.</h2></div><a className="button primary resume-download" href={sitePath("/Betty_Wen_Resume_2026_09.pdf")} download>Download PDF <span>↓</span></a></div>
-      <div className="resume-layout"><div className="resume-document"><iframe src={`${sitePath("/Betty_Wen_Resume_2026_09.pdf")}#view=FitH`} title="Betty Wen résumé" /></div><aside><span>PDF / 01</span><p>The complete résumé is displayed here. Download the PDF for a full-size copy.</p><a className="button primary" href={sitePath("/Betty_Wen_Resume_2026_09.pdf")} download>Download résumé <span>↓</span></a></aside></div>
+      <div className="resume-heading"><div><p className="eyebrow">Résumé</p><h2 id="resume-title">Experience at a glance.</h2></div><a className="button primary resume-download" href={sitePath("/Betty_Wen_Resume_HVAC_2026_09.pdf")} download>Download PDF <span>↓</span></a></div>
+      <div className="resume-layout"><div className="resume-document"><iframe src={`${sitePath("/Betty_Wen_Resume_HVAC_2026_09.pdf")}#view=FitH`} title="Betty Wen résumé" /></div><aside><span>PDF / 01</span><p>The complete résumé is displayed here. Download the PDF for a full-size copy.</p><a className="button primary" href={sitePath("/Betty_Wen_Resume_HVAC_2026_09.pdf")} download>Download résumé <span>↓</span></a></aside></div>
     </section>
     <SiteFooter />
   </main>;

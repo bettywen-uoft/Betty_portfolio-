@@ -93,6 +93,29 @@ export const experiences: Experience[] = [
     overview: "Improved the thermal performance, vibration control, and manufacturability of an oxygen concentrator compressor module through iterative design and testing.",
     projects: [{ slug: "oxygen-concentrator", code: "PROJECT 01", title: "Oxygen Concentrator Thermal Module", summary: "Designed and 3D-printed ventilation and vibration-damping components, then validated the system across multiple measurement points to keep the compressor below 55°C during extended operation.", tags: ["Thermal Design", "3D Printing", "Product Testing"] }],
   },
+  {
+    slug: "rsx",
+    cardImage: sitePath("/rsx-vehicle-frame.png"),
+    cardAlt: "Fusion 360 model of the RSX vehicle frame and mechanical platform",
+    index: "04",
+    period: "SEP 2023 — SEP 2024",
+    role: "Mechanical Team Member",
+    company: "Robotics for Space Exploration Club",
+    location: "University of Toronto",
+    overview: "Contributed to the mechanical design and assembly of a student-built vehicle platform, developing structural components in Fusion 360 and evaluating materials for strength, weight, and durability.",
+    projects: [{
+      slug: "vehicle-platform",
+      code: "PROJECT 01",
+      title: "Vehicle Frame & Mechanical Integration",
+      summary: "Designed frame and ball-joint components in Fusion 360, compared aluminum, steel, and carbon fiber, and supported integration of the wheels, batteries, and suspension into the assembled vehicle platform.",
+      tags: ["Fusion 360", "Structural Design", "Material Selection", "Vehicle Assembly"],
+      media: [{
+        src: sitePath("/rsx-vehicle-frame.png"),
+        alt: "Fusion 360 model of the RSX vehicle frame and mechanical platform",
+        caption: "Fusion 360 vehicle-frame concept showing the structural extrusion layout and upper mechanical platform.",
+      }],
+    }],
+  },
 ];
 
 export type PortfolioProject = {
